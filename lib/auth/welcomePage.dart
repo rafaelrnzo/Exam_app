@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:exam_app/assets/color.dart';
+import 'package:exam_app/auth/LoginPage.dart';
+import 'package:exam_app/auth/SignInPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -41,7 +43,7 @@ class WelcomePage extends StatelessWidget {
             top: 16.w,
           ),
           child: Icon(
-            Ionicons.radio_button_off,
+            Ionicons.book,
             size: 55.w,
             color: primary,
           ),
@@ -62,7 +64,7 @@ class BodyWellcome extends StatelessWidget {
       children: [
         Center(
           child: Text(
-            "Welcome to MyApp",
+            "Welcome to Exam App",
             textAlign: TextAlign.center,
             style: GoogleFonts.inter(
                 fontSize: 8.w, color: text, fontWeight: FontWeight.bold),
@@ -73,10 +75,10 @@ class BodyWellcome extends StatelessWidget {
         ),
         Center(
           child: Text(
-            "You must Login or Sign Up to see my app",
+            "You must Login or Sign Up to see Exam",
             textAlign: TextAlign.center,
             style: GoogleFonts.inter(
-                fontSize: 4.w, color: base50, fontWeight: FontWeight.w500),
+                fontSize: 4.w, color: text, fontWeight: FontWeight.w500),
           ),
         ),
         SizedBox(
@@ -89,7 +91,7 @@ class BodyWellcome extends StatelessWidget {
                 width: 40.w,
                 height: 6.h,
                 child: TextButton(
-                  style: TextButton.styleFrom(backgroundColor: base),
+                  style: TextButton.styleFrom(backgroundColor: primary),
                   onPressed: () {
                     Navigator.pushReplacement(
                       context,
@@ -101,7 +103,7 @@ class BodyWellcome extends StatelessWidget {
                     style: GoogleFonts.inter(
                       fontWeight: FontWeight.w500,
                       fontSize: 4.5.w,
-                      color: whiteA,
+                      color: Colors.white,
                     ),
                   ),
                 )),
@@ -109,7 +111,7 @@ class BodyWellcome extends StatelessWidget {
                 width: 40.w,
                 height: 6.h,
                 child: TextButton(
-                  style: TextButton.styleFrom(backgroundColor: base),
+                  style: TextButton.styleFrom(backgroundColor: primary),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -121,7 +123,7 @@ class BodyWellcome extends StatelessWidget {
                     style: GoogleFonts.inter(
                       fontWeight: FontWeight.w500,
                       fontSize: 4.5.w,
-                      color: whiteA,
+                      color: Colors.white,
                     ),
                   ),
                 )), 
@@ -135,7 +137,7 @@ class BodyWellcome extends StatelessWidget {
             "Don't have an account?",
             textAlign: TextAlign.center,
             style: GoogleFonts.inter(
-                fontSize: 4.w, color: base50, fontWeight: FontWeight.w500),
+                fontSize: 4.w, color: secondary, fontWeight: FontWeight.w500),
           ),
         ),
       ],

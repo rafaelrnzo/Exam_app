@@ -1,4 +1,5 @@
 import 'package:exam_app/assets/color.dart';
+import 'package:exam_app/auth/welcomePage.dart';
 import 'package:exam_app/screen/bottomNav.dart';
 import 'package:exam_app/screen/home/index.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
           ),
           // primarySwatch: mainColor(),
         ),
-        home:const BottomNav(),
+        home:const WelcomePage(),
       );
     });
   }
